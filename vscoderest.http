@@ -1,0 +1,25 @@
+
+#Get all locations:
+GET http://localhost:8080/locations/
+
+### 
+
+#Get location with ID 1:
+GET http://localhost:8080/locations/1
+
+###
+
+#Delete Location
+DELETE http://localhost:8080/locations/1
+
+###
+
+#Add new
+POST http://localhost:8080/locations/
+Content-Type: application/json
+
+{
+    "id":1,
+    "lat":65,
+    "lon":66
+}
